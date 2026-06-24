@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Advisory Semgrep SAST scan runs on every push/PR as part of the Security workflow, catching source-level security bugs using Semgrep CE community rules ([#563](https://github.com/mvanhorn/last30days-skill/issues/563))
+
+### Fixed
+
+- Firefox profile detection on Linux now checks `$XDG_CONFIG_HOME/mozilla/firefox` (or its default `~/.config/mozilla/firefox`) in addition to `~/.mozilla/firefox`, fixing cookie extraction on distros that honour the XDG Base Directory Specification ([#667](https://github.com/mvanhorn/last30days-skill/issues/667))
+
 ## [3.8.1] - 2026-06-22
 
 ### Added
